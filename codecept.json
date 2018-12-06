@@ -1,0 +1,27 @@
+{
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Puppeteer": {
+      "url": "http://localhost:4200",
+      "rootElement": "app-root",
+			"show": false
+    },
+    "Mochawesome": {
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "e2e/reports",
+      "inlineAssets": true,
+      "reportPageTitle": "E2E Test Reports",
+      "reportTitle": "E2E Test Reports"
+    }
+  },
+  "name": "moon"
+}
